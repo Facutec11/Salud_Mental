@@ -6,11 +6,13 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Georgia, serif; /* formal y elegante */
+    font-family: Georgia, serif;
+    /* formal y elegante */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;     /* centra verticalmente el GIF */
+    justify-content: center;
+    /* centra verticalmente el GIF */
     position: relative;
     min-height: 100vh;
     background-color: #fffcd5;
@@ -22,14 +24,17 @@ body {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    width: calc(100% - 20px); /* ancho máximo exacto de la pantalla menos margen */
-    max-width: 300px;          /* opcional, para pantallas más grandes */
+    width: calc(100% - 20px);
+    /* ancho máximo exacto de la pantalla menos margen */
+    max-width: 300px;
+    /* opcional, para pantallas más grandes */
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 10px;
-    padding: 10px;             /* menos padding para móviles */
+    padding: 10px;
+    /* menos padding para móviles */
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    word-wrap: break-word;     
+    word-wrap: break-word;
 }
 
 .caption h1 {
@@ -42,15 +47,21 @@ body {
 
 /* GIF centrado verticalmente */
 .gif {
-    flex: 1;                      /* ocupa todo el espacio disponible */
     width: 100%;
-    object-fit: contain;           /* mantiene proporción y se ve completo */
+    object-fit: contain;
+    max-height: 70vh;
+    /* mantiene proporción y se ve completo */
 }
 
 .footer {
+    position: fixed;    /* siempre fijo en la parte inferior */
+    bottom: 0;          /* pegado abajo */
+    left: 0;
+    width: 100%;        /* ocupa todo el ancho */
     text-align: center;
     color: #333333;
-    margin: 20px 0;       /* espacio desde el GIF */
     font-size: 1em;
-    font-family: Arial, sans-serif; /* misma fuente que uses en la página */
+    font-family: Arial, sans-serif;
+    background-color: rgba(255,252,213,0.6); /* opcional: fondo semitransparente */
+    padding: 5px 0;
 }
