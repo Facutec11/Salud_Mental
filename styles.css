@@ -6,7 +6,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Georgia, serif;
+    font-family: Poppins;
     /* formal y elegante */
     display: flex;
     flex-direction: column;
@@ -42,7 +42,7 @@ body {
     font-size: 2em;
     color: #333333;
     line-height: 1.4;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Poppins;
 }
 
 /* GIF centrado verticalmente */
@@ -61,7 +61,6 @@ body {
     text-align: center;
     color: #333333;
     font-size: 1em;
-    font-family: Arial, sans-serif;
     background-color: rgba(255,252,213,0.6); /* opcional: fondo semitransparente */
     padding: 5px 0;
 }
